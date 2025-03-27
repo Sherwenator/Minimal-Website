@@ -39,6 +39,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         .hero {
             text-align: center;
@@ -66,25 +67,40 @@
         .cta-btn:hover {
             background-color: #d97706;
         }
-        .services {
+        .process {
             margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
         }
-        .service-card {
-            background: #fff;
+        .process-step {
+            margin-bottom: 20px;
             padding: 20px;
+            background: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
-        .service-card h3 {
-            color: #1f2937;
+        .process-step h3 {
             margin-bottom: 10px;
+            color: #1f2937;
         }
-        .service-card p {
-            color: #4b5563;
+        .faq-section {
+            margin-top: 50px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            background: #e5e7eb;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-top: 5px;
         }
         footer {
             margin-top: 20px;
@@ -99,42 +115,69 @@
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-        <a href="testimonials.html">Testimonials</a>
     </nav>
 
-    <!-- Hero Section -->
     <div class="hero">
-        <h1>The Transformation of Body & Mind</h1>
+        <h1>Transform Your Body and Mind for Life</h1>
         <p>Personalized coaching that combines strength training, nutrition, and habit-building to help you achieve lasting results.</p>
         <a href="contact.html" class="cta-btn">Get Your Free Assessment</a>
     </div>
 
-    <!-- Services Section -->
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>🏋️ Custom Training Programs</h3>
-                <p>Tailored workout programs to fit your goals – fat loss, strength, or muscle growth.</p>
-            </div>
-            <div class="service-card">
-                <h3>🍎 Nutrition & Lifestyle Coaching</h3>
-                <p>Macro-based meal plans and lifestyle guidance to promote sustainable habits.</p>
-            </div>
-            <div class="service-card">
-                <h3>📈 Habit & Behavior Coaching</h3>
-                <p>Develop discipline and accountability with expert coaching.</p>
-            </div>
-            <div class="service-card">
-                <h3>🎯 1-on-1 Consultations</h3>
-                <p>Personalized check-ins and progress reviews to keep you on track.</p>
-            </div>
+    <div class="container process">
+        <h2>Our Coaching Process</h2>
+        <div class="process-step">
+            <h3>1. Initial Consultation</h3>
+            <p>We assess your goals, lifestyle, and fitness level to create a personalized roadmap.</p>
+        </div>
+        <div class="process-step">
+            <h3>2. Custom Plan Creation</h3>
+            <p>A tailored workout, nutrition, and habit plan is designed to align with your goals.</p>
+        </div>
+        <div class="process-step">
+            <h3>3. Weekly Check-ins & Adjustments</h3>
+            <p>Track progress, adjust plans, and refine strategies to ensure continued success.</p>
+        </div>
+        <div class="process-step">
+            <h3>4. Lifestyle Mastery</h3>
+            <p>Master sustainable habits that will keep you on track for life.</p>
+        </div>
+    </div>
+
+    <div class="container faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-item">
+            <div class="faq-question">How long until I see results?</div>
+            <div class="faq-answer">Most clients start seeing noticeable changes within 4-6 weeks, but long-term results are achieved with consistency.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What’s included in the program?</div>
+            <div class="faq-answer">You’ll receive a personalized training plan, nutrition guide, habit coaching, and weekly progress check-ins.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Do I get ongoing support?</div>
+            <div class="faq-answer">Yes! Weekly check-ins and progress adjustments ensure that you stay on track and motivated.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I adjust my plan if needed?</div>
+            <div class="faq-answer">Absolutely! Plans are flexible and can be modified based on your progress and feedback.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What if I have an injury or can’t train?</div>
+            <div class="faq-answer">Injuries are taken into account, and alternative exercises or rehab strategies are provided.</div>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
-
