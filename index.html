@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transform Your Body Like a Pro</title>
+    <title>Transform Your Body and Mind</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
     <style>
         * {
@@ -44,7 +44,6 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            line-height: 1.2;
             margin-bottom: 15px;
         }
         .hero p {
@@ -64,13 +63,12 @@
         .cta-btn:hover {
             background-color: #d97706;
         }
-        .benefits-section, .testimonials-section, .case-study-section, .cta-section {
-            background: #111827;
+        .container {
+            background: #1e293b;
             padding: 40px 20px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            text-align: center;
         }
         h2 {
             color: #f59e0b;
@@ -81,17 +79,11 @@
             color: #94a3b8;
             margin-bottom: 20px;
         }
-        .benefit {
-            margin-top: 20px;
+        .benefit, .testimonial, .case-study {
             background: #1e293b;
             padding: 20px;
             border-radius: 8px;
-        }
-        .testimonial {
             margin-top: 20px;
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
         }
         footer {
             margin-top: 20px;
@@ -100,6 +92,33 @@
             color: #f9fafb;
             padding: 10px;
             border-radius: 12px;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .cta-btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -113,13 +132,13 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Transform Your Body and Build Unstoppable Discipline</h1>
+        <h1>Transform Your Body and Mind for Life</h1>
         <p>Personalized coaching that combines strength training, nutrition, and habit-building to help you achieve lasting results.</p>
-        <a href="contact.html" class="cta-btn">Get Started Now</a>
+        <a href="contact.html" class="cta-btn">Get Your Free Assessment</a>
     </div>
 
     <!-- Benefits Section -->
-    <div class="benefits-section">
+    <div class="container">
         <h2>Why My System Works</h2>
         <div class="benefit">
             <p>✅ Proven Strength & Hypertrophy Protocols</p>
@@ -133,7 +152,7 @@
     </div>
 
     <!-- Testimonials Section -->
-    <div class="testimonials-section">
+    <div class="container">
         <h2>Real Client Success Stories</h2>
         <div class="testimonial">
             <p>"I gained 15 lbs of muscle and completely transformed my physique. Best investment ever!" – John D.</p>
@@ -144,14 +163,14 @@
     </div>
 
     <!-- Case Studies Section -->
-    <div class="case-study-section">
+    <div class="container">
         <h2>Proven Results. Sustainable Habits.</h2>
         <p>See how hundreds of clients have transformed their bodies and built a mindset that lasts.</p>
         <a href="blog.html" class="cta-btn">View Case Studies</a>
     </div>
 
-    <!-- Lead Generation/CTA Section -->
-    <div class="cta-section">
+    <!-- Call-to-Action Section -->
+    <div class="container">
         <h2>Ready to Dominate Your Fitness Goals?</h2>
         <p>Take the first step to building a stronger, more disciplined version of yourself.</p>
         <a href="contact.html" class="cta-btn">Apply Now</a>
@@ -162,3 +181,4 @@
     </footer>
 </body>
 </html>
+
