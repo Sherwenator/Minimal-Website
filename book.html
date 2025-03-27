@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Book a Session</title>
+    <title>Book a Session</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
     <style>
         body {
@@ -30,9 +30,24 @@
             margin-bottom: 20px;
             color: #94a3b8;
         }
-        .calendly-inline-widget {
+        iframe {
             width: 100%;
             height: 700px;
+            border: none;
+            border-radius: 12px;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #f59e0b;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .cta-btn:hover {
+            background-color: #d97706;
         }
         footer {
             margin-top: 20px;
@@ -41,6 +56,14 @@
             color: #f9fafb;
             padding: 10px;
             border-radius: 12px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            iframe {
+                height: 500px;
+            }
         }
     </style>
 </head>
@@ -54,17 +77,19 @@
     </nav>
 
     <div class="container">
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out via email at <a href="mailto:your@email.com">your@email.com</a> or schedule a session below.</p>
+        <h1>Schedule Your Free Consultation</h1>
+        <p>Book a free 15-minute consultation to discuss your fitness goals.</p>
 
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/harrison sherwen/15min" style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
+        <!-- Calendly Fallback Button -->
+        <a href="https://calendly.com/harrisonsherwen/15min" target="_blank" class="cta-btn">Open Calendly in New Tab</a>
+        <br><br>
+        
+        <!-- Calendly Iframe Embed -->
+        <iframe src="https://calendly.com/harrisonsherwen/15min" frameborder="0"></iframe>
+
+        <footer>
+            <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
-    </footer>
 </body>
 </html>
