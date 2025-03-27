@@ -34,22 +34,15 @@
         nav a:hover {
             color: #60a5fa;
         }
-        .container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
         .hero {
             text-align: center;
             padding: 80px 20px;
-            background: url('images/hero-MainBG.jpg') no-repeat center center/cover;
+            background: url('images/hero-bg.jpeg') no-repeat center center/cover;
             color: white;
             border-radius: 12px;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 15px;
         }
         .hero p {
@@ -67,41 +60,27 @@
         .cta-btn:hover {
             background-color: #d97706;
         }
-        .process {
-            margin-top: 50px;
-        }
-        .process-step {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #10b981;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: white;
-        }
-        .process-step h3 {
-            margin-bottom: 10px;
-        }
-        .faq-section {
-            margin-top: 50px;
-        }
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        .faq-question {
-            background: #e5e7eb;
-            padding: 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-        }
-        .faq-answer {
-            display: none;
-            padding: 15px;
+        .about-section, .testimonials-section, .values-section, .cta-section {
             background: #fff;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            margin-top: 5px;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            margin-top: 20px;
+        }
+        .testimonial p {
+            font-style: italic;
         }
         footer {
             margin-top: 20px;
@@ -110,28 +89,6 @@
             color: #f9fafb;
             padding: 10px;
             border-radius: 12px;
-        }
-        .cta-section {
-            background: #f59e0b;
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 40px;
-            text-align: center;
-        }
-        .cta-section h2 {
-            color: white;
-            margin-bottom: 10px;
-        }
-        .cta-btn {
-            background-color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            color: #f59e0b;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .cta-btn:hover {
-            background-color: #e5e7eb;
         }
     </style>
 </head>
@@ -143,47 +100,51 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Hero Section -->
     <div class="hero">
         <h1>Transform Your Body and Mind for Life</h1>
         <p>Personalized coaching that combines strength training, nutrition, and habit-building to help you achieve lasting results.</p>
         <a href="contact.html" class="cta-btn">Get Your Free Assessment</a>
     </div>
 
-    <div class="container process">
-        <h2>Our Coaching Process</h2>
-        <div class="process-step">
-            <h3>1. 📝 Initial Consultation</h3>
-            <p>We assess your goals, lifestyle, and fitness level to create a personalized roadmap.</p>
+    <!-- About/Why Choose Me Section -->
+    <div class="about-section">
+        <h2>Why Choose Me?</h2>
+        <p>With a proven system built around strength training, nutrition, and behavior change, I help clients achieve long-lasting transformations by focusing on sustainable habits and discipline.</p>
+        <p>✅ Certified Strength & Conditioning Specialist (CSCS)</p>
+        <p>✅ Precision Nutrition Certified Coach</p>
+        <p>✅ Expertise in Habit-Based Coaching & Behavior Science</p>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+        <h2>Client Success Stories</h2>
+        <div class="testimonial">
+            <p>"I lost 20 lbs and gained strength while staying consistent. Best decision I’ve made!" – John D.</p>
         </div>
-        <div class="process-step">
-            <h3>2. 💡 Custom Plan Creation</h3>
-            <p>A tailored workout, nutrition, and habit plan is designed to align with your goals.</p>
+        <div class="testimonial">
+            <p>"The personalized coaching and weekly adjustments kept me on track every step of the way." – Sarah M.</p>
         </div>
-        <div class="process-step">
-            <h3>3. 📈 Weekly Check-ins & Adjustments</h3>
-            <p>Track progress, adjust plans, and refine strategies to ensure continued success.</p>
+        <div class="testimonial">
+            <p>"Building discipline through habit coaching changed my life beyond just fitness." – Mike T.</p>
         </div>
-        <div class="process-step">
-            <h3>4. 🧠 Lifestyle Mastery</h3>
-            <p>Master sustainable habits that will keep you on track for life.</p>
-        </div>
+    </div>
+
+    <!-- Core Values/Philosophy Section -->
+    <div class="values-section">
+        <h2>My Core Values</h2>
+        <p>💡 Discipline, habit-building, and long-term sustainability are at the heart of everything I teach. I empower clients to master their mindset and achieve results that last.</p>
+    </div>
+
+    <!-- Lead Generation/Newsletter CTA Section -->
+    <div class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p>Subscribe to receive exclusive insights on strength training, nutrition, and building a winning mindset.</p>
+        <a href="contact.html" class="cta-btn">Join My Mailing List</a>
     </div>
 
     <footer>
         <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', () => {
-                const answer = item.nextElementSibling;
-                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
-            });
-        });
-    </script>
-</body>
-</html>
-
-    </script>
 </body>
 </html>
