@@ -3,7 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog - Fitness & Lifestyle Insights</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3f4f6;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #1f2937;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #60a5fa;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            color: white;
+            border-radius: 12px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .featured-posts {
+            margin-top: 40px;
+        }
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .post-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .post-card h3 {
+            margin: 15px 0;
+            color: #1f2937;
+        }
+        .post-card p {
+            color: #4b5563;
+            margin-bottom: 10px;
+        }
+        .read-more {
+            text-decoration: none;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        .categories {
+            margin-top: 50px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background: #3b82f6;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #6b7280;
+        }
+        .cta-section {
+            background: #f59e0b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .cta-btn {
+            background-color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-btn:hover {
+            background-color: #e5e7eb;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,13 +141,57 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
-        <h1>My Blog</h1>
-        <p>Welcome to my blog where I share insights about minimalism, productivity, and living a simpler life.</p>
-        <ul>
-            <li><a href="blog/post1.html">Post 1: Introduction to Minimalism</a></li>
-            <li><a href="blog/post2.html">Post 2: How to Simplify Your Life</a></li>
-        </ul>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Fitness & Lifestyle Insights</h1>
+        <p>Explore expert insights on training, nutrition, behavior change, and mindset mastery.</p>
     </div>
+
+    <!-- Featured Posts Section -->
+    <div class="container featured-posts">
+        <h2>Featured Blog Posts</h2>
+        <div class="post-grid">
+            <div class="post-card">
+                <img src="images/post1.jpg" alt="Introduction to Minimalism">
+                <h3>🏋️‍♂️ Strength Training for Beginners</h3>
+                <p>Learn how to build a strong foundation with proper form and technique.</p>
+                <a href="blog/post1.html" class="read-more">Read More</a>
+            </div>
+            <div class="post-card">
+                <img src="images/post2.jpg" alt="Simplify Your Life">
+                <h3>🍎 Nutrition Tips for Fat Loss</h3>
+                <p>Discover how to balance your macros and stay on track.</p>
+                <a href="blog/post2.html" class="read-more">Read More</a>
+            </div>
+            <div class="post-card">
+                <img src="images/post3.jpg" alt="Building Habits">
+                <h3>📈 Build Habits for Long-Term Success</h3>
+                <p>Master discipline and create lasting change with behavior-based techniques.</p>
+                <a href="blog/post3.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="container categories">
+        <h2>Explore by Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">🏋️ Training</div>
+            <div class="category-card">🍎 Nutrition</div>
+            <div class="category-card">🧠 Mindset & Habits</div>
+            <div class="category-card">🔥 Transformations</div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="cta-section">
+        <h2>Want More Insights?</h2>
+        <p>Sign up for our newsletter to receive exclusive content and tips!</p>
+        <a href="contact.html" class="cta-btn">Subscribe Now</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
+    </footer>
 </body>
 </html>
