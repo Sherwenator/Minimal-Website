@@ -44,7 +44,7 @@
         .hero {
             text-align: center;
             padding: 80px 20px;
-            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            background: url('images/hero-bg.jpeg') no-repeat center center/cover;
             color: white;
             border-radius: 12px;
         }
@@ -73,13 +73,14 @@
         .process-step {
             margin-bottom: 20px;
             padding: 20px;
-            background: #fff;
+            background: #10b981;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
         }
         .process-step h3 {
             margin-bottom: 10px;
-            color: #1f2937;
         }
         .faq-section {
             margin-top: 50px;
@@ -105,7 +106,32 @@
         footer {
             margin-top: 20px;
             text-align: center;
-            color: #6b7280;
+            background-color: #1f2937;
+            color: #f9fafb;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .cta-section {
+            background: #f59e0b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .cta-btn {
+            background-color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-btn:hover {
+            background-color: #e5e7eb;
         }
     </style>
 </head>
@@ -143,30 +169,6 @@
         </div>
     </div>
 
-    <div class="container faq-section">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <div class="faq-item">
-            <div class="faq-question">How long until I see results?</div>
-            <div class="faq-answer">Most clients start seeing noticeable changes within 4-6 weeks, but long-term results are achieved with consistency.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">What’s included in the program?</div>
-            <div class="faq-answer">You’ll receive a personalized training plan, nutrition guide, habit coaching, and weekly progress check-ins.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Do I get ongoing support?</div>
-            <div class="faq-answer">Yes! Weekly check-ins and progress adjustments ensure that you stay on track and motivated.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Can I adjust my plan if needed?</div>
-            <div class="faq-answer">Absolutely! Plans are flexible and can be modified based on your progress and feedback.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">What if I have an injury or can’t train?</div>
-            <div class="faq-answer">Injuries are taken into account, and alternative exercises or rehab strategies are provided.</div>
-        </div>
-    </div>
-
     <footer>
         <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
     </footer>
@@ -178,6 +180,10 @@
                 answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
             });
         });
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
