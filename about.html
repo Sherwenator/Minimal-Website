@@ -3,7 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Fitness & Lifestyle Coach</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3f4f6;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #1f2937;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #60a5fa;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            color: white;
+            border-radius: 12px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .section h2 {
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+        .section p {
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+        .core-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .value-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .value-card h3 {
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #6b7280;
+        }
+        .cta-btn {
+            background-color: #f59e0b;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-btn:hover {
+            background-color: #d97706;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,9 +110,55 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <div class="hero">
         <h1>About Me</h1>
-        <p>Hello! I'm passionate about minimalism and simplicity. I love creating websites that are fast, clean, and functional. My goal is to help people declutter their digital lives and focus on what truly matters.</p>
+        <p>Empowering you to build discipline, master habits, and transform your body and mind for life.</p>
     </div>
+
+    <!-- Background & Credentials -->
+    <div class="container section">
+        <h2>My Journey & Credentials</h2>
+        <p>With years of experience in fitness and behavior change, I’ve helped countless individuals achieve lasting transformations by combining strength training, nutrition, and psychology-based coaching.</p>
+        <p>✅ Certified Strength & Conditioning Specialist (CSCS)</p>
+        <p>✅ Precision Nutrition Level 1 Certified</p>
+        <p>✅ Expertise in Habit-Based Coaching & Behavior Science</p>
+    </div>
+
+    <!-- Philosophy Section -->
+    <div class="container section">
+        <h2>Why I’m Different</h2>
+        <p>I focus on building lifelong habits and sustainable results by addressing the core of behavior change. My coaching emphasizes long-term transformation through discipline, consistency, and habit mastery.</p>
+    </div>
+
+    <!-- Core Values -->
+    <div class="container section">
+        <h2>Core Values & Mission</h2>
+        <div class="core-values">
+            <div class="value-card">
+                <h3>🎯 Discipline First</h3>
+                <p>Discipline is the foundation of long-term success. I empower clients to cultivate unwavering consistency.</p>
+            </div>
+            <div class="value-card">
+                <h3>🧠 Mindset & Habits</h3>
+                <p>By building habits that align with your goals, success becomes automatic and sustainable.</p>
+            </div>
+            <div class="value-card">
+                <h3>💪 Sustainable Transformation</h3>
+                <p>Results that last are built through a combination of accountability and lifestyle mastery.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="container section">
+        <h2>Ready to Begin Your Transformation?</h2>
+        <p>Take the first step toward building discipline and achieving lasting results.</p>
+        <a href="contact.html" class="cta-btn">Schedule Your Free Consultation</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
+    </footer>
 </body>
 </html>
