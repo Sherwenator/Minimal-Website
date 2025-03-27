@@ -13,14 +13,15 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            background: #f3f4f6;
+            background: #1f2937;
             margin: 0 auto;
             max-width: 1200px;
             padding: 20px;
             line-height: 1.8;
+            color: #f9fafb;
         }
         nav {
-            background-color: #1f2937;
+            background-color: #111827;
             padding: 15px;
             text-align: center;
         }
@@ -32,104 +33,85 @@
             font-size: 18px;
         }
         nav a:hover {
-            color: #60a5fa;
+            color: #f59e0b;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #0f172a;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #94a3b8;
+        }
+        .cta-btn {
+            background-color: #f59e0b;
+            padding: 16px 32px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .cta-btn:hover {
+            background-color: #d97706;
         }
         .container {
-            background: #fff;
-            padding: 30px;
+            background: #111827;
+            padding: 40px 20px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(to right, #3b82f6, #1e40af);
-            color: white;
-            border-radius: 12px;
+        h2 {
+            color: #f59e0b;
+            margin-bottom: 20px;
+            font-size: 2rem;
         }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2rem;
+        p {
+            color: #94a3b8;
             margin-bottom: 20px;
         }
-        .featured-posts {
-            margin-top: 40px;
-        }
-        .post-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        .post-card {
-            background: #fff;
+        .blog-post {
+            background: #1e293b;
+            padding: 20px;
             border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            margin-bottom: 20px;
         }
-        .post-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .post-card h3 {
-            margin: 15px 0;
-            color: #1f2937;
-        }
-        .post-card p {
-            color: #4b5563;
+        .blog-post h3 {
+            color: #f9fafb;
             margin-bottom: 10px;
         }
-        .read-more {
+        .blog-post a {
+            color: #f59e0b;
             text-decoration: none;
-            color: #3b82f6;
             font-weight: 600;
         }
-        .categories {
-            margin-top: 50px;
+        .blog-post a:hover {
+            text-decoration: underline;
         }
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-        }
-        .category-card {
-            background: #3b82f6;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
+        .cta-section {
+            background: #1e293b;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
             text-align: center;
         }
         footer {
             margin-top: 20px;
             text-align: center;
-            color: #6b7280;
-        }
-        .cta-section {
-            background: #f59e0b;
-            padding: 30px;
+            background-color: #111827;
+            color: #f9fafb;
+            padding: 10px;
             border-radius: 12px;
-            margin-top: 40px;
-            text-align: center;
-        }
-        .cta-section h2 {
-            color: white;
-            margin-bottom: 10px;
-        }
-        .cta-btn {
-            background-color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            color: #f59e0b;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .cta-btn:hover {
-            background-color: #e5e7eb;
         }
     </style>
 </head>
@@ -143,50 +125,34 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Fitness & Lifestyle Insights</h1>
-        <p>Explore expert insights on training, nutrition, behavior change, and mindset mastery.</p>
+        <h1>Fitness, Nutrition & Mindset Insights</h1>
+        <p>Explore expert insights, actionable tips, and proven strategies to transform your body and mind.</p>
     </div>
 
-    <!-- Featured Posts Section -->
-    <div class="container featured-posts">
+    <!-- Blog Post Previews -->
+    <div class="container">
         <h2>Featured Blog Posts</h2>
-        <div class="post-grid">
-            <div class="post-card">
-                <img src="images/post1.jpg" alt="Introduction to Minimalism">
-                <h3>🏋️‍♂️ Strength Training for Beginners</h3>
-                <p>Learn how to build a strong foundation with proper form and technique.</p>
-                <a href="blog/post1.html" class="read-more">Read More</a>
-            </div>
-            <div class="post-card">
-                <img src="images/post2.jpg" alt="Simplify Your Life">
-                <h3>🍎 Nutrition Tips for Fat Loss</h3>
-                <p>Discover how to balance your macros and stay on track.</p>
-                <a href="blog/post2.html" class="read-more">Read More</a>
-            </div>
-            <div class="post-card">
-                <img src="images/post3.jpg" alt="Building Habits">
-                <h3>📈 Build Habits for Long-Term Success</h3>
-                <p>Master discipline and create lasting change with behavior-based techniques.</p>
-                <a href="blog/post3.html" class="read-more">Read More</a>
-            </div>
+        <div class="blog-post">
+            <h3>🏋️ How to Build Strength While Staying Lean</h3>
+            <p>Discover the best strategies for building strength without adding unnecessary fat. Learn how to balance volume and intensity for maximum results.</p>
+            <a href="blog/post1.html">Read More →</a>
         </div>
-    </div>
-
-    <!-- Categories Section -->
-    <div class="container categories">
-        <h2>Explore by Categories</h2>
-        <div class="category-grid">
-            <div class="category-card">🏋️ Training</div>
-            <div class="category-card">🍎 Nutrition</div>
-            <div class="category-card">🧠 Mindset & Habits</div>
-            <div class="category-card">🔥 Transformations</div>
+        <div class="blog-post">
+            <h3>🍎 5 Nutrition Habits That Guarantee Fat Loss</h3>
+            <p>Master the essential nutrition habits that keep you in a calorie deficit while maintaining performance and energy.</p>
+            <a href="blog/post2.html">Read More →</a>
+        </div>
+        <div class="blog-post">
+            <h3>🧠 Mastering Discipline: Building Habits That Last</h3>
+            <p>Develop a mindset that makes discipline second nature. Build habits that allow you to stay consistent for life.</p>
+            <a href="blog/post3.html">Read More →</a>
         </div>
     </div>
 
     <!-- Call-to-Action Section -->
     <div class="cta-section">
-        <h2>Want More Insights?</h2>
-        <p>Sign up for our newsletter to receive exclusive content and tips!</p>
+        <h2>Get Exclusive Fitness Insights</h2>
+        <p>Join my mailing list and receive actionable tips on strength, nutrition, and mindset.</p>
         <a href="contact.html" class="cta-btn">Subscribe Now</a>
     </div>
 
