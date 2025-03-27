@@ -3,7 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Fitness & Lifestyle Coaching</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3f4f6;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #1f2937;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #60a5fa;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            color: white;
+            border-radius: 12px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            margin-top: 40px;
+        }
+        form {
+            display: grid;
+            grid-gap: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #f59e0b;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d97706;
+        }
+        .contact-info {
+            margin-top: 50px;
+        }
+        .info-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: #f59e0b;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .cta-btn {
+            background-color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-btn:hover {
+            background-color: #e5e7eb;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #6b7280;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,11 +129,46 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <div class="hero">
         <h1>Contact Me</h1>
-        <p>Feel free to reach out via email at <a href="mailto:your@email.com">your@email.com</a>.</p>
-        <h2>Contact Form (Future Feature)</h2>
-        <p>In the future, I’ll add a contact form here to make reaching out even easier.</p>
+        <p>Ready to transform your life? Let’s get started with a free consultation.</p>
     </div>
+
+    <!-- Contact Form Section -->
+    <div class="container form-section">
+        <h2>Get in Touch</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="container contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-box">
+            <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        </div>
+        <div class="info-box">
+            <p>📱 Phone: +1-234-567-8900</p>
+        </div>
+        <div class="info-box">
+            <p>📍 Location: Your City, Country</p>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="cta-section">
+        <h2>Ready to Take Action?</h2>
+        <p>Schedule your free consultation and begin your transformation journey!</p>
+        <a href="contact.html" class="cta-btn">Schedule Now</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
+    </footer>
 </body>
 </html>
