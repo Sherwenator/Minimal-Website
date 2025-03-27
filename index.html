@@ -3,50 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Minimalist Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Transform Your Body and Mind</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background: #f3f4f6;
+            margin: 0 auto;
+            max-width: 1200px;
             padding: 20px;
-        }
-        h1, h2, h3 {
-            line-height: 1.2;
-        }
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            line-height: 1.8;
         }
         nav {
-            background-color: #333;
-            padding: 10px;
+            background-color: #1f2937;
+            padding: 15px;
             text-align: center;
         }
         nav a {
-            margin-right: 15px;
-            color: #fff;
+            margin: 0 15px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
         }
         nav a:hover {
-            color: #f4a261;
+            color: #60a5fa;
         }
         .container {
             background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            color: white;
+            border-radius: 12px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            background-color: #f59e0b;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-btn:hover {
+            background-color: #d97706;
+        }
+        .services {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card h3 {
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            color: #4b5563;
         }
         footer {
             margin-top: 20px;
             text-align: center;
-            color: #666;
+            color: #6b7280;
         }
     </style>
 </head>
@@ -58,19 +101,39 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
-        <h1>Welcome to My Minimalist Website</h1>
-        <p>This is a simple, clean website designed with speed and simplicity in mind.</p>
-
-        <h2>Latest Blog Posts</h2>
-        <ul>
-            <li><a href="blog/post1.html">Post 1: Introduction to Minimalism</a></li>
-            <li><a href="blog/post2.html">Post 2: How to Simplify Your Life</a></li>
-        </ul>
-
-        <footer>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </footer>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Transform Your Body and Mind for Life</h1>
+        <p>Personalized coaching that combines strength training, nutrition, and habit-building to help you achieve lasting results.</p>
+        <a href="contact.html" class="cta-btn">Get Your Free Assessment</a>
     </div>
+
+    <!-- Services Section -->
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>🏋️ Custom Training Programs</h3>
+                <p>Tailored workout programs to fit your goals – fat loss, strength, or muscle growth.</p>
+            </div>
+            <div class="service-card">
+                <h3>🍎 Nutrition & Lifestyle Coaching</h3>
+                <p>Macro-based meal plans and lifestyle guidance to promote sustainable habits.</p>
+            </div>
+            <div class="service-card">
+                <h3>📈 Habit & Behavior Coaching</h3>
+                <p>Develop discipline and accountability with expert coaching.</p>
+            </div>
+            <div class="service-card">
+                <h3>🎯 1-on-1 Consultations</h3>
+                <p>Personalized check-ins and progress reviews to keep you on track.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Fitness & Lifestyle Coaching. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
