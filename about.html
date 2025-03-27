@@ -10,8 +10,42 @@
             font-family: 'Poppins', sans-serif;
             background-color: #1f2937;
             color: #f9fafb;
-            padding: 20px;
+            padding: 0;
             margin: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            background-color: #111827;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #f59e0b;
+        }
+        .hero {
+            text-align: center;
+            background-color: #0f172a;
+            padding: 80px 20px;
+            border-radius: 12px;
+            margin: 40px auto 20px auto;
+            max-width: 800px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 25px;
         }
         .container {
             max-width: 800px;
@@ -21,22 +55,21 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            font-size: 2.2rem;
+        h2 {
+            color: #f59e0b;
             margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            color: #94a3b8;
+            font-size: 1.8rem;
         }
         .process-step {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding: 20px;
             background-color: #2d3748;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .process-step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
         }
         footer {
             margin-top: 20px;
@@ -44,7 +77,6 @@
             background-color: #111827;
             color: #f9fafb;
             padding: 10px;
-            border-radius: 12px;
         }
         .cta-btn {
             display: inline-block;
@@ -55,6 +87,7 @@
             border-radius: 8px;
             font-size: 18px;
             text-decoration: none;
+            font-weight: 600;
         }
         .cta-btn:hover {
             background-color: #d97706;
@@ -70,34 +103,36 @@
         <a href="book.html">Book</a>
     </nav>
 
-    <div class="container">
+    <div class="hero">
         <h1>About Harrison Sherwen</h1>
-        <p>I’m Harrison Sherwen, a fitness and lifestyle coach who specializes in helping clients achieve real, lasting results by focusing on strength, nutrition, and behavior change. My system is built on proven methods that prioritize consistency and sustainable habits.</p>
-        
+        <p>I’m Harrison Sherwen, a fitness and lifestyle coach who specializes in helping clients achieve real, lasting results by focusing on strength, nutrition, and behavior change.</p>
+    </div>
+
+    <div class="container">
         <h2>My Proven Coaching Process</h2>
 
         <div class="process-step">
-            <h3>1. Initial Assessment & Onboarding</h3>
+            <h3>✅ 1. Initial Assessment & Onboarding</h3>
             <p>We assess your goals, lifestyle, and training history to create a roadmap tailored specifically to you.</p>
         </div>
         
         <div class="process-step">
-            <h3>2. Custom Plan Creation</h3>
+            <h3>✅ 2. Custom Plan Creation</h3>
             <p>Receive a fully customized meal and training plan that aligns with your goals, ensuring sustainable progress.</p>
         </div>
 
         <div class="process-step">
-            <h3>3. Weekly Progress Monitoring</h3>
+            <h3>✅ 3. Weekly Progress Monitoring</h3>
             <p>Track progress through weekly check-ins, progress photos, and biofeedback metrics to ensure you’re on track.</p>
         </div>
         
         <div class="process-step">
-            <h3>4. Make Necessary Adjustments</h3>
+            <h3>✅ 4. Make Necessary Adjustments</h3>
             <p>Based on weekly feedback, we adjust the plan to ensure continued progress toward your long-term goal.</p>
         </div>
         
         <div class="process-step">
-            <h3>5. Achieve Your Dream Outcome</h3>
+            <h3>✅ 5. Achieve Your Dream Outcome</h3>
             <p>Hit your long-term goal and transition into maintenance to ensure long-lasting results.</p>
         </div>
         
